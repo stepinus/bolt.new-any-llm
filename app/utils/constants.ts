@@ -5,13 +5,13 @@ export const WORK_DIR = `/home/${WORK_DIR_NAME}`;
 export const MODIFICATIONS_TAG_NAME = 'bolt_file_modifications';
 export const MODEL_REGEX = /^\[Model: (.*?)\]\n\n/;
 export const PROVIDER_REGEX = /\[Provider: (.*?)\]\n\n/;
-export const DEFAULT_MODEL = 'claude-3-5-sonnet-latest';
-export const DEFAULT_PROVIDER = 'Anthropic';
+export const DEFAULT_MODEL = 'anthropic/claude-3-5-haiku-20241022:beta';
+export const DEFAULT_PROVIDER = 'OpenRouter';
 
 const staticModels: ModelInfo[] = [
   { name: 'gpt-4o', label: 'GPT-4o', provider: 'OpenAI' },
   { name: 'anthropic/claude-3.5-sonnet', label: 'Anthropic: Claude 3.5 Sonnet (OpenRouter)', provider: 'OpenRouter' },
-  { name: 'anthropic/claude-3-haiku', label: 'Anthropic: Claude 3 Haiku (OpenRouter)', provider: 'OpenRouter' },
+  { name: 'anthropic/claude-3-5-haiku-20241022:beta', label: 'Anthropic: Claude 3.5 Haiku (OpenRouter)', provider: 'OpenRouter' },
   { name: 'deepseek/deepseek-coder', label: 'Deepseek-Coder V2 236B (OpenRouter)', provider: 'OpenRouter' },
   { name: 'google/gemini-flash-1.5', label: 'Google Gemini Flash 1.5 (OpenRouter)', provider: 'OpenRouter' },
   { name: 'google/gemini-pro-1.5', label: 'Google Gemini Pro 1.5 (OpenRouter)', provider: 'OpenRouter' },
